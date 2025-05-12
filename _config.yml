@@ -1,1 +1,88 @@
+# standard jekyll configuration
+content_editable: true
+baseurl: /gst-hst-business
+url: https://youhex.github.io/
+repository: cra-design/gst-hst-business
+website: https://youhex.github.io/en.html
+
+# Remote theme, use the latest version
+remote_theme: wet-boew/gcweb-jekyll
+
+# Files excluded from Jekyll builds
+exclude:
+- README.md
+- Gemfile
+- Gemfile.lock
+- gcweb-jekyll.gemspec
+
+# Site settings
+assets: https://wet-boew.github.io/themes-dist
+creator:
+  en: "Canada Revenue Agency"
+  fr: "Agence du revenu du Canada"
+
+# Custom settings
+developerOptions: true
+devOptionsLocStore: "gitCRATemplateDevOptions"
+exitByURL: false
+exitPage: "/gst-hst-business/exit-intent.html"
+externalOrigin: "https://youhex.github.io/"
+modifiedLinkList: "/gst-hst-business/templates/data/link_excludes.json"
+relativeExternalLinks: false
+testBanner: true
+
+# Page front matter defaults
+defaults:
+  - scope:
+      path: "" # Ensure it's applied to all pages
+      type: pages
+    values:
+      layout: default
+      lang: en
+      share: true
+      sitemenu: true
+      sitesearch: true
+      feedback: true
+      feedbackData:
+        theme: "Taxes"
+      feedbackPath: https://www.canada.ca/etc/designs/canada/wet-boew/assets/feedback/page-feedback-en.html
+      privacyUrl: https://www.canada.ca/en/revenue-agency/corporate/privacy-notice.html
+      termsURL: https://www.canada.ca/en/transparency/terms.html
+      contextualFooter:
+        title: "Canada Revenue Agency (CRA)"
+        links:
+         - text: "Contact the CRA"
+           url: "https://www.canada.ca/en/revenue-agency/corporate/contact-information.html"
+         - text: "Update your information"
+           url: "https://www.canada.ca/en/revenue-agency/services/update-information-cra.html"
+         - text: "About the CRA"
+           url: "https://www.canada.ca/en/revenue-agency/corporate/about-canada-revenue-agency-cra.html"
+      css: 
+        - https://use.fontawesome.com/releases/v5.15.4/css/all.css
+        - https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/m%C3%A9li-m%C3%A9lo/2024-09-kejimkujik.css
+        - https://youhex.github.io//gst-hst-business/templates/css/testing-banner.css
+      script: 
+        - https://www.canada.ca/etc/designs/canada/wet-boew/js/ep-pp.min.js
+        - https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/m%C3%A9li-m%C3%A9lo/2024-09-kejimkujik.js
+        - https://youhex.github.io//gst-hst-business/templates/scripts/external-link-detour.js
+  -
+    scope:
+      path: "en/"
+    values:
+      lang: "en"
+  -
+    scope:
+      path: "fr/"
+    values:
+      lang: "fr"
+  -
+    scope:
+      path: "templates/"
+    values:
+      lang: "en"
+  -
+    scope:
+      path: "sandbox/"
+    values:
+      lang: "en"
 
