@@ -3,7 +3,7 @@ content_editable: true
 baseurl: /gst-hst-business
 url: https://youhex.github.io/
 repository: cra-design/gst-hst-business
-website: https://www.canada.ca/en.html
+website: https://youhex.github.io/en.html
 
 # Remote theme, use the latest version
 remote_theme: wet-boew/gcweb-jekyll
@@ -26,7 +26,7 @@ developerOptions: true
 devOptionsLocStore: "gitCRATemplateDevOptions"
 exitByURL: false
 exitPage: "/gst-hst-business/exit-intent.html"
-externalOrigin: "https://www.canada.ca"
+externalOrigin: "https://youhex.github.io/"
 modifiedLinkList: "/gst-hst-business/templates/data/link_excludes.json"
 relativeExternalLinks: false
 testBanner: true
